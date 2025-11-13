@@ -26,7 +26,13 @@ namespace D.Classes
         {
             Status = TaskStatus.Выполнена;
         }
-        public bool IsDone => Status == TaskStatus.Выполнена;
-        public bool IsOverdue => DateTime.Now > Deadline && !IsDone;
+        public bool IsDone
+        {
+            get { return Status == TaskStatus.Выполнена; }
+        }
+        public bool IsOverdue
+        {
+            get { return DateTime.Now > Deadline && !IsDone; }
+        }
     }
 }

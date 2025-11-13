@@ -9,7 +9,7 @@ namespace D
     {
         static void Main()
         {
-            Console.WriteLine("=== Task Manager ===\n");
+            Console.WriteLine("Task Manager\n");
             var team = new List<Person>
             {
                 new Person("Анна", "Тимлид"),
@@ -48,7 +48,7 @@ namespace D
             {
                 task.StartWork();
                 task.Complete();
-                Console.WriteLine($"- {task.Name} -> {task.Status}");
+                Console.WriteLine($"{task.Name} - {task.Status}");
             }
             project.Close();
             Console.WriteLine($"\nПроект завершен: {project.Status}");
@@ -60,13 +60,14 @@ namespace D
             Console.WriteLine("\nИсполнители:");
             foreach (var task in project.Tasks)
             {
-                Console.WriteLine($"- {task.Executor.Name} ({task.Executor.Role}): {task.Name}");
+                Console.WriteLine($"{task.Executor.Name} ({task.Executor.Role}): {task.Name}");
             }
             var overdue = project.GetOverdueTasks();
             if (overdue.Count > 0)
             {
                 Console.WriteLine($"\nПросроченные задачи: {overdue.Count}");
             }
+            Console.ReadKey();
         }
     }   
 }

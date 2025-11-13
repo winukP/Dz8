@@ -34,7 +34,7 @@ namespace Tumakov
             {
                 Console.WriteLine($"{song.Name} - {song.Author}, {(song.Prev == null ? "null" : song.Prev.Name)}");
             }
-           
+            Console.ReadKey();
         }
     }
 }
