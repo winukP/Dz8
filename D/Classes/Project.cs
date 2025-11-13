@@ -11,7 +11,6 @@ namespace D.Classes
         public Person TeamLead { get; set; }
         public List<Task> Tasks { get; set; }
         public ProjectStatus Status { get; set; }
-
         public Project(string name, Person teamLead)
         {
             Name = name;
@@ -19,7 +18,6 @@ namespace D.Classes
             Tasks = new List<Task>();
             Status = ProjectStatus.Проект;
         }
-
         public void AddTask(string taskName, Person executor, DateTime deadline)
         {
             if (Status == ProjectStatus.Проект)
@@ -27,12 +25,10 @@ namespace D.Classes
                 Tasks.Add(new Task(taskName, executor, deadline));
             }
         }
-
         public void Start()
         {
             Status = ProjectStatus.Исполнение;
         }
-
         public void Close()
         {
             if (Tasks.All(t => t.IsDone))
@@ -40,8 +36,6 @@ namespace D.Classes
                 Status = ProjectStatus.Закрыт;
             }
         }
-
-        // Получить просроченные задачи
         public List<Task> GetOverdueTasks()
         {
             return Tasks.Where(t => t.IsOverdue).ToList();
