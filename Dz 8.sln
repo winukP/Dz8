@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tumakov", "Tumakov\Tumakov.csproj", "{B69609CE-C868-4219-9F65-048C88ABB99C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D", "D\D.csproj", "{98A41072-D137-436B-B5A6-FBE34D550C9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B69609CE-C868-4219-9F65-048C88ABB99C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B69609CE-C868-4219-9F65-048C88ABB99C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B69609CE-C868-4219-9F65-048C88ABB99C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B69609CE-C868-4219-9F65-048C88ABB99C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A41072-D137-436B-B5A6-FBE34D550C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A41072-D137-436B-B5A6-FBE34D550C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A41072-D137-436B-B5A6-FBE34D550C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A41072-D137-436B-B5A6-FBE34D550C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FD20828-64B4-4909-9197-D6FCBC795C33}
+	EndGlobalSection
+EndGlobal
